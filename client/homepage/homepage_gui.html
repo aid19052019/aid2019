@@ -4,16 +4,130 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <style>
-        div{
-            width:100%px;
-            height:50px;
+        body>div>div:nth-child(1){
+            width:200px;
+            height:100px;
             background-color:red;
+            float:left;
+        }
+        #div1{
+            postion:relative;
+            margin:0 auto;
+            width:75%;
+            height:35px;
+            background-color:rgb(255,127,20);
+        }
+        #div1>ul>li{
+            list-style:none;
+            margin:0 auto;
+            float:left;
+            height:20px;
+            margin:6px 8px;
+            font-size:15px;
+            font-weight:bold;
+        }
+        a{
+            text-decoration:none;
+            color:#fff;
+        }
+        .pipe{
+            font-size:18px;
+            margin:0px;
+            color:#fff;
         }
     </style>
 </head>
 <body>
-    <div margin:0px>
-        <p>桂奕</p>
+    <!--<div style="height:200px;"></div>-->
+        <!--<div>主题市场-->
+            <!--<p>男装</p>-->
+            <!--<p>女装</p>-->
+            <!--<p>童装</p>-->
+            <!--<p>冬装</p>-->
+            <!--<p>夏装</p>-->
+            <!--<p>春装</p>-->
+        <!--</div>-->
+
+    <div id="div1">
+        <div>
+            <ul>
+                <li>
+                    <a href="">男装</a>
+                </li>
+                <li>
+                    <a href="">女装</a>
+                </li>
+                <li>
+                    <a href="">童装</a>
+                </li>
+                <li>
+                    <a href="">西装</a>
+                </li>
+            </ul>
+        </div>
+        <ul style="margin:4px 18px; font-size:18px;">
+            <li style="margin:4px 16px; font-size:17px;">
+            <a href="https://www.tmall.com">天猫</a>
+            </li>
+            <li style="margin:4px 16px; font-size:17px;">
+            <a href="https://ju.taobao.com">聚划算</a>
+            </li>
+            <li style="margin:4px 16px; font-size:17px;">
+            <a href="https://chaoshi.tmall.com">天猫超市</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="pipe">|</li>
+            <li>
+            <a href="https://qiang.taobao.com">淘抢购</a>
+            </li>
+            <li>
+            <a href="https://3c.tmall.com">电器城</a>
+            </li>
+            <li>
+            <a href="https://sf.taobao.com">司法拍卖</a>
+            </li>
+            <li>
+            <a href="https://good.tmall.com">淘宝心选</a>
+            </li>
+            <li>
+            <a href="https://www.taobao.com/markets/xt/znfp">兴农扶贫</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="pipe">|</li>
+            <li>
+            <a href="https://www.fliggy.com/?spm=a21bo.50862.201859.9.28689e73wh3bzS">飞猪旅行</a>
+            </li>
+            <li>
+            <a href="https://yun.taobao.com">智能生活</a>
+            </li>
+            <li>
+            <a href="https://suning.tmall.com/">苏宁易购</a>
+            </li>
+            <li>
+            <a href="https://aliyun.tmall.com/">云栖大会</a>
+            </li>
+        </ul>
     </div>
+    <!--<script>-->
+        <!--var btnRed=document.getElementById("p1")-->
+        <!--btnRed.onclick=function(){-->
+            <!--document.body.style.backgroundColor="red"-->
+        <!--}-->
+
+        <!--var btnBlue=document.getElementById("p2")-->
+        <!--btnBlue.onclick=function(){-->
+            <!--document.body.style.backgroundColor="blue"-->
+        <!--}    -->
+        <!--var btnGreen=document.getElementById("p3")-->
+        <!--btnGreen.onclick=function(){-->
+            <!--document.body.style.backgroundColor="green"-->
+        <!--}-->
+        <!--var btnWhite=document.getElementById("g1")-->
+        <!--btnWhite.onmouseout=function(){-->
+            <!--document.body.style.backgroundColor="white"-->
+        <!--}-->
+    <!--</script>-->
 </body>
 </html>
