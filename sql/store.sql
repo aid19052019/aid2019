@@ -48,3 +48,45 @@ create table favorite_shop(
     shop_id int,#店铺id,来源：店铺表
     create_time timestamp 
 )
+
+
+# 店主信息
+create table shopkeeper(
+    id int primary key auto_increment,
+    card_type char(10), # 证件类型
+    card_num char(32),   # 证件号码
+    pic blob,   # 证件照片
+    validity_date date, # 证件有效期
+);
+
+
+# 店铺信息
+create table store(
+    id int primary key auto_increment,
+    seller_no int ,  # 商家编码
+    open_date  date, # 开店日期
+    level varchar(16), # 商铺等级
+    address varchar(32), # 店铺地址
+    store_type varchar(16) # 店铺分类
+);
+
+
+# 商家宝贝
+create table shop_goods(
+    id int primary key auto_increment,
+    goods_id  int, # 商品id (关联“商品”表)
+    goods_title varchar(16), # 商品标题
+    goods_type varchar(16),  # 商品类型
+    price  decimal(6,2),   # 商品价格
+    seller_id int, # 商家id (关联“店铺”表)
+);
+
+
+# 历史交易记录
+create table buy_history(
+    id int primary key auto_increment,
+    user_id varchar(16), # 买家id (关联“用户”表)
+    seller_id int, # 商家id  (关联“店铺”表)
+    goods_id  int, # 商品id (关联“商品”表)
+    order_id  int # 订单id (关联“订单”表)
+);
