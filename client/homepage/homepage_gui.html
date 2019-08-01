@@ -3,65 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <!--设置在新窗口中打开新页面-->
+    <base target="_blank"\>
     <style>
-        body>div>div:nth-child(1){
-            width:200px;
-            height:100px;
-            background-color:red;
-            float:left;
-        }
-        #div1{
-            postion:relative;
+        /* div2部分由桂奕负责,内容为首页搜索栏下方的两个板块 */
+        #div2{
             margin:0 auto;
-            width:75%;
+            width:100%;
             height:35px;
-            background-color:rgb(255,127,20);
+            background-color:#ff851a;
         }
-        #div1>ul>li{
+        /* 将超链接统一设为白字无标签 */
+        #div2 a{
+            text-decoration:none;
+            color:#fff;
+        }
+        /* 统一规定分割线的长度和颜色 */
+        #div2 .pipe{
+            font-size:15px;
+            margin:6px auto;
+            color:#fff;
+        }
+        /* 统一规定表格中的元素格式 */
+        #div2 li{
             list-style:none;
-            margin:0 auto;
             float:left;
             height:20px;
             margin:6px 8px;
             font-size:15px;
+            font-weight:700;
+        }
+        /* div2>div:nth-child(1)是主题市场所在的区域 */
+        #div2>div:nth-child(1){
+            width:200px;
+            height:520px;
+            background-color:#fff;
+            float:left;
+            border:solid 1px #ff851a;
+            text-align: center;
+        }
+        #div2>div a{
+            color:#666;
+        }
+        #div2>div>div{
+            width:200px;
+            height:34px;
+            background-color:rgba(255,80,11,1);
+            font-size:17px;
             font-weight:bold;
-        }
-        a{
-            text-decoration:none;
             color:#fff;
         }
-        .pipe{
-            font-size:18px;
+        #div2>div>ul{
+            float: left;
+            margin: 10px 20px;
+            padding: 0px;
+        }
+        #div2>div>ul>li{
             margin:0px;
-            color:#fff;
+            font-weight:400;
+        }
+        #div2 .arrowhead{
+            display:inline-block;
+            width:0px;
+            height:0px;
+            border:5px solid rgba(0, 0, 0, 0);
+            border-left-color:#888;
+            /* 每多一个字缩进少 */
+            margin:0px 0px 0px 32px;
+        }
+        #divx{
+            position: absolute;
+            left:322px;
+            top:51px;
+            width:300px;
+            height:300px;
+            border:solid 1px black;
         }
     </style>
 </head>
 <body>
-    <!--<div style="height:200px;"></div>-->
-        <!--<div>主题市场-->
-            <!--<p>男装</p>-->
-            <!--<p>女装</p>-->
-            <!--<p>童装</p>-->
-            <!--<p>冬装</p>-->
-            <!--<p>夏装</p>-->
-            <!--<p>春装</p>-->
-        <!--</div>-->
-
-    <div id="div1">
+    <div id="div2">
         <div>
+            <div>主题市场</div>
+            <!-- 每个小板块的内容暂时做成一致的 -->
             <ul>
                 <li>
+                    <a href="">女装</a>
+                    /
                     <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
                 </li>
+            </ul>
+            <ul>
                 <li>
                     <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
                 </li>
+            </ul>
+            <ul>
                 <li>
-                    <a href="">童装</a>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
                 </li>
+            </ul>
+            <ul>
                 <li>
-                    <a href="">西装</a>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">女装</a>
+                    /
+                    <a href="">男装</a>
+                    /
+                    <a href="">内衣</a>
+                    <div class='arrowhead'></div>
                 </li>
             </ul>
         </div>
@@ -109,25 +251,8 @@
             <a href="https://aliyun.tmall.com/">云栖大会</a>
             </li>
         </ul>
+        <div id="divx"></div>
     </div>
-    <!--<script>-->
-        <!--var btnRed=document.getElementById("p1")-->
-        <!--btnRed.onclick=function(){-->
-            <!--document.body.style.backgroundColor="red"-->
-        <!--}-->
-
-        <!--var btnBlue=document.getElementById("p2")-->
-        <!--btnBlue.onclick=function(){-->
-            <!--document.body.style.backgroundColor="blue"-->
-        <!--}    -->
-        <!--var btnGreen=document.getElementById("p3")-->
-        <!--btnGreen.onclick=function(){-->
-            <!--document.body.style.backgroundColor="green"-->
-        <!--}-->
-        <!--var btnWhite=document.getElementById("g1")-->
-        <!--btnWhite.onmouseout=function(){-->
-            <!--document.body.style.backgroundColor="white"-->
-        <!--}-->
-    <!--</script>-->
+    </script>
 </body>
 </html>
