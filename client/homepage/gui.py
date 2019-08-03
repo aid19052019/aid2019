@@ -14,11 +14,11 @@ def rturn():
 
 
 t.home()
-t.pencolor("white")
+t.pencolor("RED")
 t.hideturtle()
 t.begin_fill()
 t.pensize(1)
-t.speed(100)
+t.speed(1)
 t.lt(90)
 t.fd(100)
 lturn()

@@ -5,6 +5,7 @@
     <title>首页</title>
     <!--设置在新窗口中打开新页面-->
     <base target="_blank"\>
+    <script src="jquery.min.js"></script>
     <style>
         /* div2部分由桂奕负责,内容为首页搜索栏下方的两个板块 */
         #div2{
@@ -328,16 +329,15 @@
         var second=document.getElementById("second")
         var colors=["#400","#500","#600","#700","#800","#900","#a00","#b00","#c00","#d00","#e00","#f00"]
        for(var i=0; i<12;i++){
-       second.getElementsByTagName("ul")[i].onmousemove=function(){
-            second.getElementsByTagName("ul")[a].className="focus"
+            second.getElementsByTagName("ul")[i].onmousemove=function(){
+            $(this).className="focus"
             col.className="show"
-            col.style.backgroundColor=colors[a]
+            col.style.backgroundColor=colors[0]
         }
-        second.getElementsByTagName("ul")[i].onmouseout=function(){
-            second.getElementsByTagName("ul")[a].className="unfocus"
+            second.getElementsByTagName("ul")[i].onmouseout=function(){
+            $(this).className="unfocus"
             col.className="hid"
         }}
-        a=0
     </script>
 </body>
 </html>

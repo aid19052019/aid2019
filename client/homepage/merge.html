@@ -7,149 +7,197 @@
     <title>Document</title>
     <style>
         /* div2部分由桂奕负责,内容为首页搜索栏下方的两个板块 */
-        #div2x{
-            height:530px;
-            border:solid 0px black;
+        #div2x {
+            height: 530px;
+            border: solid 0px black;
         }
-        #div2{
-            position:relative;
-            margin:0 auto;
-            width:1190px;
-            height:30px;
-            background-color:#ff851a;
+
+        #div2 {
+            position: relative;
+            margin: 0 auto;
+            width: 1190px;
+            height: 30px;
+            background-color: #ff851a;
         }
+
         /* 将超链接统一设为白字无标签 */
-        #div2 a{
-            text-decoration:none;
-            color:#fff;
+        #div2 a {
+            text-decoration: none;
+            color: #fff;
         }
+
         /* 统一规定分割线的长度和颜色 */
-        #div2 .pipe{
-            font-size:15px;
-            margin:6px auto;
-            color:#fff;
+        #div2 .pipe {
+            font-size: 15px;
+            margin: 6px auto;
+            color: #fff;
         }
+
         /* 统一规定表格中的字体格式 */
-        #div2 li{
-            list-style:none;
-            float:left;
-            height:20px;
-            margin:6px 8px;
-            font-size:15px;
-            font-weight:700;
+        #div2 li {
+            list-style: none;
+            float: left;
+            height: 20px;
+            margin: 6px 8px;
+            font-size: 15px;
+            font-weight: 700;
         }
+
         /* child(1)是主题市场所在的区域 */
-        #div2>div:nth-child(1){
-            width:200px;
-            height:530px;
-            background-color:#fff;
-            float:left;
-            border:solid 1px rgba(255,80,11,1);
+        #div2>div:nth-child(1) {
+            width: 200px;
+            height: 530px;
+            background-color: #fff;
+            float: left;
+            border: solid 1px rgba(255, 80, 11, 1);
             text-align: center;
         }
+
         /* 主体市场部分超链接额外格式 */
-        #div2>div a{
-            color:#666;
+        #div2>div a {
+            color: #666;
         }
-        #div2>div>div:nth-child(1){
-            width:200px;
-            height:29px;
-            background-color:rgba(255,80,11,1);
-            font-size:17px;
-            font-weight:bold;
-            color:#fff;
+
+        #div2>div>div:nth-child(1) {
+            width: 200px;
+            height: 29px;
+            background-color: rgba(255, 80, 11, 1);
+            font-size: 17px;
+            font-weight: bold;
+            color: #fff;
         }
-        #div2>div>ul{
+
+        #div2>div>ul {
             float: left;
             margin: 10px 20px;
             padding: 0px;
         }
-        #div2>div>ul>li{
-            margin:0px;
-            font-weight:400;
+
+        #div2>div>ul>li {
+            margin: 0px;
+            font-weight: 400;
         }
-        #div2 .arrowhead{
-            display:inline-block;
-            width:0px;
-            height:0px;
-            border:5px solid rgba(0, 0, 0, 0);
-            border-left-color:#888;
+
+        #div2 .arrowhead {
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border: 5px solid rgba(0, 0, 0, 0);
+            border-left-color: #888;
             /* 每多一个字缩进少 */
-            margin:0px 0px 0px 30px;
+            margin: 0px 0px 0px 30px;
         }
-        #divx{
+
+        #divx {
             position: absolute;
-            left:202px;
-            top:30px;
-            width:500px;
-            height:500px;
-            border:solid 1px #ddd;
+            left: 202px;
+            top: 30px;
+            width: 500px;
+            height: 500px;
+            border: solid 1px #ddd;
         }
-        #divx .lleft{
-            top:45%;
-            left:0px;
-            position:absolute;
+
+        #divx .lleft {
+            top: 45%;
+            left: 0px;
+            position: absolute;
         }
-        #divx .rright{
-            top:45%;
-            right:0px;
-            position:absolute;
-        }        
-        .hid{
-            display:none;
+
+        #divx .rright {
+            top: 45%;
+            right: 0px;
+            position: absolute;
         }
-        .show{
-            display:block;
+
+        .hid {
+            display: none;
         }
-        .focus{
-            background-color:#ffe4dc;
-            color:#ff5000;
+
+        .show {
+            display: block;
         }
-        .unfocus{
+
+        .focus {
+            background-color: #ffe4dc;
+            color: #ff5000;
+        }
+
+        .unfocus {
             background-color: #fff;
-            color:#666;
+            color: #666;
         }
-        #ulx{
+
+        #ulx {
             position: absolute;
-            left:182px;
-            top:20px;
+            left: 182px;
+            top: 20px;
             border: solid 1px #666;
-            width:500px;
-            height:500px;
+            width: 500px;
+            height: 500px;
             background-color: black;
         }
+
         /* div4部分由聂子杰负责 */
         /* 清除所有边框 */
-        blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+        blockquote,
+        body,
+        button,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        td,
+        textarea,
+        th,
+        ul {
             margin: 0;
             padding: 0;
         }
+
         /* 背景颜色 */
-        body{
+        body {
             background-color: #f4f4f4;
-            font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+            font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
         }
+
         /* 爱逛好货的板块 */
-        #div4{
+        #div4 {
             width: 1190px;
             margin: 0 auto;
             margin-top: 10px;
         }
+
         /*  */
         .clearfix:before {
             content: " ";
             display: table;
             clear: both;
         }
+
         /* 爱逛好货样式 */
-        #divaghh{
+        #divaghh {
             width: 590px;
             float: left;
             height: 658px;
             background-color: #FFF;
         }
+
         /* 爱逛好货中标题样式 */
-        #divaghh h3{
+        #divaghh h3 {
             margin: 0;
             padding: 0;
             padding-left: 20px;
@@ -157,13 +205,15 @@
             margin-bottom: 20px;
             font-size: 100%;
         }
+
         /* 爱逛好货中标题图片样式 */
-        #divaghh #btimg{
+        #divaghh #btimg {
             height: 24px;
             margin-right: 5px;
         }
+
         /* 爱逛好货中文字标题样式 */
-        #divaghh p{  
+        #divaghh p {
             line-height: 24px;
             width: 180px;
             height: 48px;
@@ -171,8 +221,9 @@
             font-weight: 400;
             overflow: hidden;
         }
+
         /* 爱逛好货中列表样式 */
-        #divaghh ul{
+        #divaghh ul {
             overflow: hidden;
             padding-left: 21px;
             list-style: none;
@@ -180,8 +231,9 @@
             padding: 0;
             padding-inline-start: 21px;
         }
+
         /* 爱逛好货中超链接样式 */
-        #divaghh a{
+        #divaghh a {
             float: left;
             width: 180px;
             overflow: hidden;
@@ -189,10 +241,12 @@
             color: #3C3C3C;
             text-decoration: none;
         }
+
         /* 爱逛好货中超链接鼠标滑过（悬停）变天依色样式 */
-        a:hover h4{
+        a:hover h4 {
             color: #6CF;
         }
+
         /*  */
         .tb-fn {
             position: absolute;
@@ -205,12 +259,14 @@
             width: 100px;
             text-align: right;
         }
+
         /* 定义图片为块对象 */
-        #divaghh img{
+        #divaghh img {
             display: block;
         }
+
         /* 爱逛好货中商品标题样式 */
-        #divaghh h4{
+        #divaghh h4 {
             width: 180px;
             height: 28px;
             margin-top: 5px;
@@ -225,195 +281,195 @@
 <body>
     <div id="div2x">
         <div id="div2">
-                <div id="second">
-                    <div>主题市场</div>
-                    <!-- 每个小板块的内容暂时做成一致的 -->
-                    <ul name="0">
-                        <li>
-                            <a href="">零一</a>
-                            /
-                            <a href="">零二</a>
-                            /
-                            <a href="">零三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">一一</a>
-                            /
-                            <a href="">一二</a>
-                            /
-                            <a href="">一三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">二一</a>
-                            /
-                            <a href="">二二</a>
-                            /
-                            <a href="">二三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">三一</a>
-                            /
-                            <a href="">三二</a>
-                            /
-                            <a href="">三三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">四一</a>
-                            /
-                            <a href="">四二</a>
-                            /
-                            <a href="">四三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">五一</a>
-                            /
-                            <a href="">五二</a>
-                            /
-                            <a href="">五三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">六一</a>
-                            /
-                            <a href="">六二</a>
-                            /
-                            <a href="">六三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">七一</a>
-                            /
-                            <a href="">七二</a>
-                            /
-                            <a href="">七三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">八一</a>
-                            /
-                            <a href="">八二</a>
-                            /
-                            <a href="">八三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">九一</a>
-                            /
-                            <a href="">九二</a>
-                            /
-                            <a href="">九三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">甲一</a>
-                            /
-                            <a href="">甲二</a>
-                            /
-                            <a href="">甲三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="">乙一</a>
-                            /
-                            <a href="">乙二</a>
-                            /
-                            <a href="">乙三</a>
-                            <div class='arrowhead'></div>
-                        </li>
-                    </ul>
-                </div>
-                <ul style="margin:4px 18px; font-size:18px;">
-                    <li style="margin:4px 16px; font-size:17px;">
+            <div id="second">
+                <div>主题市场</div>
+                <!-- 每个小板块的内容暂时做成一致的 -->
+                <ul name="0">
+                    <li>
+                        <a href="">零一</a>
+                        /
+                        <a href="">零二</a>
+                        /
+                        <a href="">零三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">一一</a>
+                        /
+                        <a href="">一二</a>
+                        /
+                        <a href="">一三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">二一</a>
+                        /
+                        <a href="">二二</a>
+                        /
+                        <a href="">二三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">三一</a>
+                        /
+                        <a href="">三二</a>
+                        /
+                        <a href="">三三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">四一</a>
+                        /
+                        <a href="">四二</a>
+                        /
+                        <a href="">四三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">五一</a>
+                        /
+                        <a href="">五二</a>
+                        /
+                        <a href="">五三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">六一</a>
+                        /
+                        <a href="">六二</a>
+                        /
+                        <a href="">六三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">七一</a>
+                        /
+                        <a href="">七二</a>
+                        /
+                        <a href="">七三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">八一</a>
+                        /
+                        <a href="">八二</a>
+                        /
+                        <a href="">八三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">九一</a>
+                        /
+                        <a href="">九二</a>
+                        /
+                        <a href="">九三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">甲一</a>
+                        /
+                        <a href="">甲二</a>
+                        /
+                        <a href="">甲三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">乙一</a>
+                        /
+                        <a href="">乙二</a>
+                        /
+                        <a href="">乙三</a>
+                        <div class='arrowhead'></div>
+                    </li>
+                </ul>
+            </div>
+            <ul style="margin:4px 18px; font-size:18px;">
+                <li style="margin:4px 16px; font-size:17px;">
                     <a href="https://www.tmall.com">天猫</a>
-                    </li>
-                    <li style="margin:4px 16px; font-size:17px;">
+                </li>
+                <li style="margin:4px 16px; font-size:17px;">
                     <a href="https://ju.taobao.com">聚划算</a>
-                    </li>
-                    <li style="margin:4px 16px; font-size:17px;">
+                </li>
+                <li style="margin:4px 16px; font-size:17px;">
                     <a href="https://chaoshi.tmall.com">天猫超市</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="pipe">|</li>
-                    <li>
+                </li>
+            </ul>
+            <ul>
+                <li class="pipe">|</li>
+                <li>
                     <a href="https://qiang.taobao.com">淘抢购</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://3c.tmall.com">电器城</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://sf.taobao.com">司法拍卖</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://good.tmall.com">淘宝心选</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://www.taobao.com/markets/xt/znfp">兴农扶贫</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="pipe">|</li>
-                    <li>
+                </li>
+            </ul>
+            <ul>
+                <li class="pipe">|</li>
+                <li>
                     <a href="https://www.fliggy.com/?spm=a21bo.50862.201859.9.28689e73wh3bzS">飞猪旅行</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://yun.taobao.com">智能生活</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://suning.tmall.com/">苏宁易购</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a href="https://aliyun.tmall.com/">云栖大会</a>
-                    </li>
+                </li>
+            </ul>
+            <div id="divx">
+                <img id="pic01" src="/home/tarena/桌面/老虎.jpg" alt="">
+                <div class="lleft"><img src="/home/tarena/桌面/l1.png" alt=""></div>
+                <div class="rright"><img src="/home/tarena/桌面/r1.png" alt=""></div>
+            </div>
+            <div id="divxx">
+                <ul id="ulx" class="hid">
+                    <li class="hid">第1行</li>
+                    <li class="hid">第2行</li>
+                    <li class="hid">第3行</li>
+                    <li class="hid">第4行</li>
+                    <li class="hid">第5行</li>
+                    <li class="hid">第6行</li>
+                    <li class="hid">第7行</li>
+                    <li class="hid">第8行</li>
+                    <li class="hid">第9行</li>
+                    <li class="hid">第10行</li>
+                    <li class="hid">第11行</li>
+                    <li class="hid">第12行</li>
                 </ul>
-                <div id="divx">
-                    <img id="pic01" src="/home/tarena/桌面/老虎.jpg" alt="">
-                    <div class="lleft"><img src="/home/tarena/桌面/l1.png" alt=""></div>
-                    <div class="rright"><img src="/home/tarena/桌面/r1.png" alt=""></div>
-                </div>
-                <div id="divxx">
-                    <ul id="ulx" class="hid">
-                            <li class="hid">第1行</li>
-                            <li class="hid">第2行</li>
-                            <li class="hid">第3行</li>
-                            <li class="hid">第4行</li>
-                            <li class="hid">第5行</li>
-                            <li class="hid">第6行</li>
-                            <li class="hid">第7行</li>
-                            <li class="hid">第8行</li>
-                            <li class="hid">第9行</li>
-                            <li class="hid">第10行</li>
-                            <li class="hid">第11行</li>
-                            <li class="hid">第12行</li>
-                    </ul>
-                </div>
+            </div>
         </div>
     </div>
     <div id="div4">
@@ -423,7 +479,8 @@
                 <p style="height: 24px">与品质生活不期而遇</p>
             </h3>
             <ul>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?contentId=2500000200348015010&scm=1007.12846.65991.0&pvid=1c516e50-db11-4d88-89fd-9cdc489ad090">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?contentId=2500000200348015010&scm=1007.12846.65991.0&pvid=1c516e50-db11-4d88-89fd-9cdc489ad090">
                     <div>
                         <img src="niezijie//tp01.jpg_.webp">
                     </div>
@@ -432,7 +489,8 @@
                         <p>《破产姐妹》max最爱Tarte哑光口红笔</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.2.5af911d9ZJTx4C&contentId=2500000200723745120&scm=1007.12846.65991.0&pvid=7373f73a-747e-4348-8cd5-bf0c316e76b5">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.2.5af911d9ZJTx4C&contentId=2500000200723745120&scm=1007.12846.65991.0&pvid=7373f73a-747e-4348-8cd5-bf0c316e76b5">
                     <div>
                         <img src="niezijie/tp02.jpg_.webp">
                     </div>
@@ -441,7 +499,8 @@
                         <p>极品冰种质地，视觉效果通透莹润。</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.3.5af911d9ZJTx4C&contentId=2400000200711249580&scm=1007.12846.65991.0&pvid=7373f73a-747e-4348-8cd5-bf0c316e76b5">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.3.5af911d9ZJTx4C&contentId=2400000200711249580&scm=1007.12846.65991.0&pvid=7373f73a-747e-4348-8cd5-bf0c316e76b5">
                     <div>
                         <img src="niezijie/tp03.jpg_.webp">
                     </div>
@@ -450,7 +509,8 @@
                         <p>这个精美的碎脂机，不仅采用独特的外形的设计，结合上小巧的尺寸，让其方便你外出时随身携带哦。功能非常的强劲，短时间内就可以感受到脂肪在燃烧哦。</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.4.5af911d9qum1qd&contentId=2400000200659978891&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.4.5af911d9qum1qd&contentId=2400000200659978891&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
                     <div>
                         <img src="niezijie/tp04.jpg_.webp">
                     </div>
@@ -459,7 +519,8 @@
                         <p>宝贝很漂亮的超级闪，质量很好，做工非常精细，包装特别精致，超级豪华，圈口大小合适，戴着很合适，非常精美，时尚百搭，很满意。</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.5.5af911d9qum1qd&contentId=2500000200754226928&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.5.5af911d9qum1qd&contentId=2500000200754226928&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
                     <div>
                         <img src="niezijie/tp05.jpg_.webp">
                     </div>
@@ -468,7 +529,8 @@
                         <p>北欧简约设计，为小户型省空间</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.6.5af911d9qum1qd&contentId=2700000200272807627&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.6.5af911d9qum1qd&contentId=2700000200272807627&scm=1007.12846.65991.0&pvid=a8966694-a93b-453c-afa2-cb1bfb41c358">
                     <div>
                         <img src="niezijie/tp06.jpg_.webp">
                     </div>
@@ -476,17 +538,19 @@
                         <h4>ZIIIRO手表</h4>
                         <p>采用现代设计，让时间显示犹如日食奇观重现，引爆眼球。</p>
                     </div>
-                </a>         
+                </a>
             </ul>
         </div>
         <div id="divaghh" style="margin-left: 10px">
             <h3>
-                <a style="width: 61px;float: left" href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/index/index.html">
-                <img style="height: 24px" src="niezijie/agj.png" title="爱逛街"></a>
+                <a style="width: 61px;float: left"
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/index/index.html">
+                    <img style="height: 24px" src="niezijie/agj.png" title="爱逛街"></a>
                 <p style="height: 24px;margin-left: 6px">献给聪明可爱的你</p>
             </h3>
             <ul>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.3.5af911d9QzBmjY&itemId=200426499924">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.3.5af911d9QzBmjY&itemId=200426499924">
                     <div>
                         <img src="niezijie/agj01.jpg_.webp" alt="学院风女生一定要穿的鞋子就是它">
                     </div>
@@ -495,7 +559,8 @@
                         <p style="height: 24px">老***制</p>
                     </div>
                 </a>
-                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.4.5af911d9Y2yr9q&itemId=200417373064">
+                <a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.4.5af911d9Y2yr9q&itemId=200417373064">
                     <div>
                         <img src="niezijie/agj02.jpg_.webp" alt="裙">
                     </div>
@@ -503,7 +568,8 @@
                         <h4 style="height: 48px">裙</h4>
                         <p style="height: 24px">猫***i</p>
                     </div>
-                </a><a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.5.5af911d9Y2yr9q&itemId=200418519808">
+                </a><a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.5.5af911d9Y2yr9q&itemId=200418519808">
                     <div>
                         <img src="niezijie/agj03.jpg_.webp" alt="衬衫">
                     </div>
@@ -511,7 +577,8 @@
                         <h4 style="height: 48px">衬衫</h4>
                         <p style="height: 24px">猫***i</p>
                     </div>
-                </a><a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.6.5af911d9Y2yr9q&itemId=200419146027">
+                </a><a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.6.5af911d9Y2yr9q&itemId=200419146027">
                     <div>
                         <img src="niezijie/agj04.jpg_.webp" alt="外套">
                     </div>
@@ -519,7 +586,8 @@
                         <h4 style="height: 48px">外套</h4>
                         <p style="height: 24px">猫***i</p>
                     </div>
-                </a><a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.7.5af911d9Y2yr9q&itemId=200411377726">
+                </a><a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.7.5af911d9Y2yr9q&itemId=200411377726">
                     <div>
                         <img src="niezijie/agj05.jpg_.webp" alt="INS风格的首饰盘">
                     </div>
@@ -527,7 +595,8 @@
                         <h4 style="height: 48px">INS风格的首饰盘</h4>
                         <p style="height: 24px">爱***手</p>
                     </div>
-                </a><a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.8.5af911d9Y2yr9q&itemId=200409877653">
+                </a><a
+                    href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/item/index.html?spm=a21bo.2017.2001.8.5af911d9Y2yr9q&itemId=200409877653">
                     <div>
                         <img src="niezijie/agj06.jpg_.webp" alt="日式陶瓷水果沙拉碗">
                     </div>
@@ -540,35 +609,37 @@
         </div>
     </div>
     <script>
-        var arrImgs=["/home/tarena/桌面/老虎.jpg","/home/tarena/桌面/狮子.jpg","/home/tarena/桌面/大象.jpg"]
-        var rright=document.getElementsByClassName("rright")[0]
-        var lleft=document.getElementsByClassName("lleft")[0]
-        var index=0
-        rright.onclick=function(){
+        var arrImgs = ["/home/tarena/桌面/老虎.jpg", "/home/tarena/桌面/狮子.jpg", "/home/tarena/桌面/大象.jpg"]
+        var rright = document.getElementsByClassName("rright")[0]
+        var lleft = document.getElementsByClassName("lleft")[0]
+        var index = 0
+        rright.onclick = function () {
             index++;
-            if(index==arrImgs.length) index=0;
-            document.getElementById("pic01").src=arrImgs[index]
+            if (index == arrImgs.length) index = 0;
+            document.getElementById("pic01").src = arrImgs[index]
         }
-        lleft.onclick=function(){
+        lleft.onclick = function () {
             index--;
-            if(index==-1) index=arrImgs.length-1;
-            document.getElementById("pic01").src=arrImgs[index]
+            if (index == -1) index = arrImgs.length - 1;
+            document.getElementById("pic01").src = arrImgs[index]
         }
-        
-        var col=document.getElementById('ulx')
-        var second=document.getElementById("second")
-        var colors=["#400","#500","#600","#700","#800","#900","#a00","#b00","#c00","#d00","#e00","#f00"]
-        for(var i=0; i<12;i++){
-        second.getElementsByTagName("ul")[i].onmousemove=function(){
-            second.getElementsByTagName("ul")[a].className="focus"
-            col.className="show"
-            col.style.backgroundColor=colors[a]
+
+        var col = document.getElementById('ulx')
+        var second = document.getElementById("second")
+        var colors = ["#400", "#500", "#600", "#700", "#800", "#900", "#a00", "#b00", "#c00", "#d00", "#e00", "#f00"]
+        for (var i = 0; i < 12; i++) {
+            second.getElementsByTagName("ul")[i].onmousemove = function () {
+                second.getElementsByTagName("ul")[a].className = "focus"
+                col.className = "show"
+                col.style.backgroundColor = colors[a]
+            }
+            second.getElementsByTagName("ul")[i].onmouseout = function () {
+                second.getElementsByTagName("ul")[a].className = "unfocus"
+                col.className = "hid"
+            }
         }
-        second.getElementsByTagName("ul")[i].onmouseout=function(){
-            second.getElementsByTagName("ul")[a].className="unfocus"
-            col.className="hid"
-        }}
-        a=0
+        a = 0
     </script>
 </body>
+
 </html>
