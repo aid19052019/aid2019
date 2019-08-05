@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仓库中的宝贝</title>
+    <style>
+        body{
+            font-size: 12px;
+        }
+        #all{
+            padding: 10px 30px 20px 0;
+            border: solid 1px #ccc;
+            overflow: hidden;
+        }
+        #all>.nav{
+            float: left;
+            width: 14%;
+            border: solid 1px #ccc;
+            margin: 0 20px 10px 0;
+        }
+        #all>.nav>div{
+            margin: 20px 20px 65px 20px;
+        }
+        #all>.nav>div>div{
+            margin: 10px 0;
+        }
+        #all>.right{
+            float: left;
+            left: 20px;
+            width: 83%;
+        }
+        #all>.right>#rtop{
+            overflow: hidden;
+            border: solid 1px #ccc;
+            padding: 10px 20px;
+        }
+        #all>.right #titl{
+            display: inline-block;
+            font-weight: bold;
+            width: 100px;
+        }
+        #all>.right #notice{
+            margin-left: 107px;
+            margin-top: 5px;
+        }
+        #all>.right>#tool{
+            border: solid 1px #ccc;
+            padding: 15px 20px;
+            margin: 5px 0;
+        }
+        #all>.right>#tool>span{
+            display: inline-block;
+            width: 19%;
+            color: #959595;
+        }
+        #all>.right>#goods{
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        #all>.right>#goods>span{
+            display: inline-block;
+            padding: 10px 20px;
+            color: #959595;
+            border-right: solid 1px #e2e2e2;
+        }
+        #all>.right>#baseInfo{
+            padding: 0;
+            margin: 10px 20px;
+        }
+        #all>.right>#baseInfo>input{
+            display: inline-block;
+            width: 10%;
+            height: 25px;
+            margin-right: 30px;
+        }
+        #all>.right>#baseInfo>.ran{
+            width: 5%;
+            margin: 5px;
+        }
+        #all>.right>#choose{
+            padding: 0;
+            margin: 10px 20px 20px;
+        }
+        #all>.right>#choose>select{
+            display: inline-block;
+            width: 123px;
+            height: 30px;
+            margin-right: 30px;
+            text-align: left;
+        }
+        #all>.right>#choose>.ran{
+            width: 5%;
+            margin: 5px;
+            height: 25px;
+        }
+        /* 调整店铺分类和商品id后面的框对齐 */
+        #all>.right>#choose>.topCls{
+            margin-right: 20px;
+        }
+        #all>.right>#btn{
+            margin: 10px 20px;
+        }
+        #all>.right>#btn>input{
+            width: 60px;
+            height: 30px;
+            margin: 10px;
+            border: solid 1px #ccc;
+            background-color: white;
+            color: #494949;
+        }
+        #all>.right>#batch{
+            margin: 20px 10px 10px 0;
+        }
+        #all>.right>#batch>button,#all>.right>#batch>#more{
+            width: 90px;
+            height: 30px;
+            margin-right: 8px;
+            color: #494949;
+            text-align: center;
+        }
+        #all>.right>#data{
+            height: 200px;
+            border-bottom: solid 1px #ccc;
+        }
+        #all>.right>#data>ul{
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 5px;
+            height: 25px;
+            background-color: #e9eaee;
+            color: #494949;
+            border-top: solid 1px #ccc;
+            line-height: 25px;
+        }
+        #all>.right>#data>ul button{
+            /* display: inline-block; */
+            width: 10px;
+            height: 15px;
+            margin: 0 30px 0 5px;
+        }
+        #all>.right>#data>ul>li>#f1{
+            display: inline-block;
+            width: 350px;
+        }
+        #all>.right>#data>ul>li>.f{
+            display: inline-block;
+            margin-right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="nav">
+            <div>
+                <h3>店铺管理</h3>
+                <span>我要开店</span>
+            </div>
+            <div>
+                <h3>交易管理</h3>
+                <span>已卖出的宝贝</span>
+            </div>
+            <div>
+                <h3>宝贝管理</h3>
+                <div>发布宝贝</div>
+                <div>出售中的宝贝</div>
+                <div>仓库中的宝贝</div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="rtop">
+                <img src="" alt="">
+                <span id="titl">官方公告</span>
+                <span>1.如您在使用过程中遇到任何问题，可以反馈到旺旺群2662906756，我们会持续优化。</span>              
+                <div id="notice">2.若宝贝90天内无编辑、流量或出售的行为，系统将把宝贝作为滞销商品下架至<a href="">滞销商品下架</a></div>          
+            </div>
+            <div id="tool">
+                <span id="titl">官方工具</span>
+                <span>商品回收站</span>
+                <span>历史宝贝记录</span>
+                <span>被下架的违规宝贝</span>
+                <span>滞销下架宝贝</span>
+            </div>
+            <div id="goods">
+                <span>全部宝贝</span>
+                <span>出售中的宝贝</span>
+                <span>仓库中的宝贝</span>
+            </div>
+            <div id="baseInfo">
+                <span>商品标题</span>
+                <input type="text">
+                <span>商品ID</span>
+                <input type="text" placeholder="多个ID以逗号或空格分隔">
+                <span>商家编码</span>
+                <input type="text">
+                <span>价格</span>
+                <input type="text" class="ran">
+                <span>--</span>
+                <input type="text" class="ran">
+            </div>
+            <div id="choose">
+                <span>一级类目</span>
+                <select name="topCls" class="topCls">
+                    <option value=""></option>
+                </select>
+                <span>店铺分类</span>
+                <select name="storeCls">
+                    <option value=""></option>
+                </select>
+                <span>宝贝类型</span>
+                <select name="goodsCls">
+                    <option value=""></option>
+                </select>
+                <span>销量</span>
+                <input type="text" class="ran">
+                <span>--</span>
+                <input type="text" class="ran">
+            </div>
+            <div id="btn">
+                <input type="submit" value="查询">
+                <input type="reset"/>
+            </div>
+            <div id="batch">
+                <button>批量删除</button>
+                <button>批量上架</button>
+                <button>批量下架</button>
+                <select name="more" id="more">
+                    <option value="" aria-checked="true">更多</option>
+                </select>
+            </div>
+            <div id="data">
+                <ul>
+                    <li>
+                        <button></button>
+                        <span id="f1">商品名称</span>
+                        <span class="f">价格</span>
+                        <span class="f">库存</span>
+                        <span class="f">销量</span>
+                        <span class="f">创建时间</span>
+                        <span class="f">结束时间</span>
+                        <span class="f">操作</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
