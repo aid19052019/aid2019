@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css//style.css">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        #div3{border: 1px solid black;
+        width: 290px;
+        }
+        #tabs {
+            width: 290px;
+            height: 80px;
+            border: solid 1px #ccc;
+            margin: auto
+        }
+
+        #tabs>.nav {
+            overflow: hidden;
+        }
+
+        #tabs>.nav>div {
+            padding: 5px 0;
+            float: left;
+            text-align: center;
+            width: 58px;
+        }
+
+        #div3 .hidd {
+            display: none;
+        }
+
+        #div3 .show {
+            display: block;
+        }
+
+        #div3 .bg {
+            background-color: white;
+        }
+
+        #div3 .focus {
+            background-color: #f40;
+            color: #f40;
+        }
+    </style>
+</head>
+
+<body>
+<div id="div3">
+    <div id="a1">
+        <div class="topimg">
+            <img src="imgs/banner01.jpg" alt="">
+        </div>
+        <div>
+            <p>Hi! 你好</p>
+        </div>
+        <div class="q">
+            <p><a href="">领金币抵钱</a>&nbsp;&nbsp;<a href="">会员俱乐部</a></p>
+        </div>
+        <div class="btn">
+            <ul>
+                <li><a href="首页.html">登录</a></li>
+                <li><a href="首页.html">注册</a></li>
+                <li><a href="首页.html">开店</a></li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="">网上有害信息举报专区</a>
+        </div>
+    </div>
+    <div id="tabs">
+        <div class="nav">
+            <div class="bg" id="div01">公告</div>
+            <div class="bg" id="div02">规则</div>
+            <div class="bg" id="div03">论坛</div>
+            <div class="bg" id="div04">安全</div>
+            <div id="div05" class="focus">公益</div>
+        </div>
+        <div class="con">
+            <div id="div1_1" class="hidd">
+                东北大米征服半个中国 占天猫超市大米销量6成
+                各地人民避暑爆款产品 盲盒背后的千万级市场
+            </div>
+            <div id="div1_2" class="hidd">
+                新增《淘宝网汽配行业管理规范》公示通知《淘宝网区域零售服务说明》变更公示通知
+                《淘宝网票务行业管理规范》变更公示通知《淘宝网数字娱乐市场
+            </div>
+            <div id="div1_3" class="hidd">
+                淘宝1212活动招商 中差评功能升级
+                陌生人拼团上线 运营神器年中大促
+            </div>
+            <div id="div1_4" class="hidd">
+                魔豆妈妈公益项目 让母爱永不打烊！
+                卖家注意：风险通报！ 售假获刑又起诉！
+            </div>
+            <div id="div1_5">
+                淘宝公益平台正式更名 益起来商家招募即将截止
+                卖家如何设置公益宝贝 公益机构开店全攻略
+            </div>
+        </div>
+    </div>
+    <script>
+        function $$(id) {
+            return document.getElementById(id);
+        }
+        $$("div01").onmouseenter = function () {
+            //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div01").className = "focus";
+            $$("div02").className = "bg"
+            $$("div03").className = "bg"
+            $$("div04").className = "bg"
+            $$("div05").className = "bg"
+            //内容元素显示
+            $$("div1_1").className = "show"
+            $$("div1_2").className = "hidd"
+            $$("div1_3").className = "hidd"
+            $$("div1_4").className = "hidd"
+            $$("div1_5").className = "hidd"
+        }
+        $$("div02").onmouseenter = function () {
+            //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div02").className = "focus";
+            $$("div01").className = "bg"
+            $$("div03").className = "bg"
+            $$("div04").className = "bg"
+            $$("div05").className = "bg"
+            //内容元素显示
+            $$("div1_2").className = "show"
+            $$("div1_1").className = "hidd"
+            $$("div1_3").className = "hidd"
+            $$("div1_4").className = "hidd"
+            $$("div1_5").className = "hidd"
+        }
+        $$("div03").onmouseenter = function () {
+            //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div03").className = "focus";
+            $$("div02").className = "bg"
+            $$("div01").className = "bg"
+            $$("div04").className = "bg"
+            $$("div05").className = "bg"
+            //内容元素显示
+            $$("div1_3").className = "show"
+            $$("div1_2").className = "hidd"
+            $$("div1_1").className = "hidd"
+            $$("div1_4").className = "hidd"
+            $$("div1_5").className = "hidd"
+        }
+        $$("div04").onmouseenter = function () {
+            //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div04").className = "focus";
+            $$("div02").className = "bg"
+            $$("div03").className = "bg"
+            $$("div01").className = "bg"
+            $$("div05").className = "bg"
+            //内容元素显示
+            $$("div1_4").className = "show"
+            $$("div1_2").className = "hidd"
+            $$("div1_3").className = "hidd"
+            $$("div1_1").className = "hidd"
+            $$("div1_5").className = "hidd"
+        }
+        $$("div05").onmouseenter = function () {
+            //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div05").className = "focus";
+            $$("div02").className = "bg"
+            $$("div03").className = "bg"
+            $$("div01").className = "bg"
+            $$("div04").className = "bg"
+            //内容元素显示
+            $$("div1_5").className = "show"
+            $$("div1_2").className = "hidd"
+            $$("div1_3").className = "hidd"
+            $$("div1_1").className = "hidd"
+            $$("div1_4").className = "hidd"
+        }
+    </script>
+    <div id="a2">
+        <ul>
+            <div>
+                <li>
+                    <a href=""><img
+                            src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+            <div>
+                <li><a href="">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=69218463,3615811349&fm=26&gp=0.jpg"
+                            alt="">
+                        <p>充话费</p>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
