@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="jquery.min.js">
     <style>
         /* div2部分由桂奕负责,内容为首页搜索栏下方的两个板块 */
         #div2x {
@@ -626,15 +627,13 @@
 
         var col = document.getElementById('ulx')
         var second = document.getElementById("second")
-        var colors = ["#400", "#500", "#600", "#700", "#800", "#900", "#a00", "#b00", "#c00", "#d00", "#e00", "#f00"]
         for (var i = 0; i < 12; i++) {
             second.getElementsByTagName("ul")[i].onmousemove = function () {
-                second.getElementsByTagName("ul")[a].className = "focus"
+                $(this).className = "focus"
                 col.className = "show"
-                col.style.backgroundColor = colors[a]
             }
             second.getElementsByTagName("ul")[i].onmouseout = function () {
-                second.getElementsByTagName("ul")[a].className = "unfocus"
+                $(this).className = "unfocus"
                 col.className = "hid"
             }
         }
