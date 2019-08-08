@@ -11,21 +11,34 @@
             padding: 0;
         }
         #div1{
-            width: 100%;
+            width: 1905px;
             height:157px;
             border:solid 0px red;
         }
-        #div1>.top{
-            width: 100%;
-            height:36px;
-            border:solid 0px red;
+        #div1>.outtop{
+            width: 1905px;
+            height:37px;
+            border:solid 0px blue;
             box-shadow: 0px 0px 20px #ccc;
             background-color: #f5f5f5;
-            text-align: center;
+        }
+        
+        #div1>.outtop>.top{
+            margin:0px 357.5px;
+            width: 1190px;
+            height:36px;
+            border:solid 0px red;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+        #div1>.outtop>.top>.title{
+            margin-left: 200px;
+            border:solid 0px black;
+            float: right;
         }
         #div1>.bottom{
-            width: 70%;
-            height:97px;
+            width: 1190px;
+            height:95px;
             border:solid 0px blue;
             margin: 24px auto 0px;
             overflow: hidden;
@@ -65,11 +78,27 @@
             position: relative;
            
         }
-        .logo{
-            width: 354px;
+        .logo1{
+            width: 278px;
             height: 96px;
             border:solid 0px red;
             float: left;
+        }
+        .logo1>img{
+            width: 200px;
+            height:94px;
+        }
+        .logo2{
+            width: 96px;
+            height: 96px;
+            border:solid 0px red;
+            float: right;
+        }
+        .logo2>img{
+            margin: 0 auto;
+            width: 96px;
+            height:96px;
+            
         }
         ul{
             list-style-type: none;
@@ -136,31 +165,35 @@
         <div class="store"></div>
         <div class="server"></div>
         <div class="nav"></div>
-        <div class="top">
-            <span>中国大陆</span>
-            <a href=""><span>亲，请登录</span></a>
-            <span class="color">免费注册</span>
-            <span class="color" >|</span>
-            <span class="color" >手机逛淘宝</span>
-            <span class="color" >|</span>
-            <span class="color" >我的淘宝</span>
-            <span class="color" >|</span>
-            <span class="color">购物车</span>
-            <span class="color" >|</span>
-            <span class="color">收藏夹</span>
-            <span class="color" >|</span>
-            <span class="color">商品分类</span>
-            <span class="color" >|</span>
-            <span class="color">卖家中心</span>
-            <span class="color" >|</span>
-            <span class="color">联系客服</span>
-            <span class="color" >|</span>
-            <span class="color">网站导航</span>
-            <span class="color" >|</span>
+        <div class="outtop">
+            <div class="top">
+                <span>中国大陆</span>
+                <span><a href="">亲，请登录</a></span>
+                <span class="color">免费注册</span>
+                <div class="title">
+                    <span class="color" >|</span>
+                    <span class="color" >手机逛淘宝</span>
+                    <span class="color" >|</span>
+                    <span class="color" >我的淘宝</span>
+                    <span class="color" >|</span>
+                    <span class="color">购物车</span>
+                    <span class="color" >|</span>
+                    <span class="color">收藏夹</span>
+                    <span class="color" >|</span>
+                    <span class="color">商品分类</span>
+                    <span class="color" >|</span>
+                    <span class="color">卖家中心</span>
+                    <span class="color" >|</span>
+                    <span class="color">联系客服</span>
+                    <span class="color" >|</span>
+                    <span class="color">网站导航</span>
+                    <span class="color" >|</span>
+                </div>
+            </div>
         </div>
         <div class="bottom">
-            <div class="logo">
-
+            <div class="logo1">
+                <img src="imgs/淘宝.png" alt="">
             </div>
             <div class="search">
                 <ul>
@@ -188,7 +221,8 @@
                     <li>电脑椅</li>
                 </ol>
             </div>
-            <div class="logo">
+            <div class="logo2">
+                <img src="imgs/二维码 .jpeg" alt="">
             </div>
         </div>
     </div>
