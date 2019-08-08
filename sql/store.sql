@@ -57,6 +57,8 @@ create table shopkeeper(
     card_num char(32),   # 证件号码
     pic blob,   # 证件照片
     validity_date date, # 证件有效期
+    upd_time datetime, # 更新时间
+    create_time datetime # 创建时间
 );
 
 
@@ -67,7 +69,9 @@ create table store(
     open_date  date, # 开店日期
     level varchar(16), # 商铺等级
     address varchar(32), # 店铺地址
-    store_type varchar(16) # 店铺分类
+    store_type varchar(16), # 店铺分类
+    upd_time datetime, # 更新时间
+    create_time datetime # 创建时间
 );
 
 
@@ -77,8 +81,9 @@ create table shop_goods(
     goods_id  int, # 商品id (关联“商品”表)
     goods_title varchar(16), # 商品标题
     goods_type varchar(16),  # 商品类型
-    price  decimal(6,2),   # 商品价格
     seller_id int, # 商家id (关联“店铺”表)
+    upd_time datetime, # 更新时间
+    create_time datetime # 创建时间
 );
 
 
@@ -89,4 +94,6 @@ create table buy_history(
     seller_id int, # 商家id  (关联“店铺”表)
     goods_id  int, # 商品id (关联“商品”表)
     order_id  int # 订单id (关联“订单”表)
+    upd_time datetime, # 更新时间
+    create_time datetime # 创建时间
 );
