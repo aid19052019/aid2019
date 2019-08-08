@@ -1,0 +1,82 @@
+/* 添加卖家样式*/
+/* 添加底部通用样式 */
+#bot{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+}
+#bot>div>span{
+    border-right:solid 2px #ccc;
+    padding:0 10px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot>div>span>a{
+    text-decoration: none;
+}
+#bot>div>span>a:link{
+    color: #ccc;
+
+}
+#bot2{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+    color: #ccc;
+}
+#bot2>div>span{
+    /* border-right:solid 2px #ccc; */
+    padding:0 5px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot2>div>span>a{
+    text-decoration: none;
+}
+#bot2>div>span>a:link{
+    color: #ccc;
+
+}
+/* 添加弹框同样样式 */
+#suspension{
+    background-color: #fff;
+    width: 100px;
+    /* height: 400px; */
+    position: fixed;
+    right: 0;
+    top:180px;
+    z-index: 10000;
+
+}
+#suspension>div{
+    border:solid 1px #ccc;
+}
+#suspension>div>p{
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 10px;
+    color: #ccc;
+    list-style: none;
+}
+#suspension>div>p:nth-child(1){
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #000;
+    background-color: rgb(131, 131, 255);
+}
+#suspension>div>p>span{
+    color: #fff;
+    position:relative;
+    float: right;
+    cursor: pointer;
+}
