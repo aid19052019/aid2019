@@ -133,3 +133,7 @@ a{
     left:200px;
     top:34px;
 }
+#div2 .hidItem>a{ 
+    color:black;
+    padding:10px;
+}
