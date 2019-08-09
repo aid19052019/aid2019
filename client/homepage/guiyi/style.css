@@ -16,7 +16,7 @@ a{
 /* 编写导航条样式 */
 #div2{
     overflow:hidden;
-    border:1px solid #0ff;
+    border:0px solid #0ff;
     top:0;
     left:0;
     position:relative;
@@ -74,7 +74,7 @@ a{
     top: 34px;
 }
 #divleft li{
-    padding: 10px 12px;
+    padding: 10px 0px;
     overflow:hidden;
 }
 #divleft a{
@@ -136,4 +136,37 @@ a{
 #div2 .hidItem>a{ 
     color:black;
     padding:10px;
+}
+#div2_xjcd img{
+    width:160px;
+    height:280px;
+    float:right;
+}
+#div2_xjcd img{
+    position:absolute;
+    right:5px;
+    width:160px;
+    height:250px;
+    border:0px solid #000;
+}
+#div2_xjcd .odd{
+    top:0px;
+}
+#div2_xjcd .even{
+    top:260px;
+}
+#div2_xjcd>div>div{
+    float:left;
+    width:520px;
+    height:280px;
+}
+#div2_xjcd a{
+    float:left;
+    color: #f94a14;
+    width: 70px;
+    padding:10px 0;
+}
+#div2_xjcd span{
+    width: 70px;
+    padding:10px 0;
 }
