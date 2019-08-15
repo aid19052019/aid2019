@@ -1,23 +1,56 @@
 README.md
-[client]
-    [saler]
-        client_saler.txt
-    README.md
+[store]
+    manage.py
     [order]
-        README.md
-    [homepage]
-        copy.html
-        README.md
-        homepage_gui.html
+        tests.py
+        admin.py
+        [migrations]
+            0001_initial.py
+            0002_auto_20190815_0157.py
+            [__pycache__]
+                0002_auto_20190815_0157.cpython-36.pyc
+                0003_auto_20190815_0210.cpython-36.pyc
+                __init__.cpython-36.pyc
+                0001_initial.cpython-36.pyc
+            0003_auto_20190815_0210.py
+        urls.py
+        [__pycache__]
+            models.cpython-36.pyc
+            __init__.cpython-36.pyc
+            views.cpython-36.pyc
+            admin.cpython-36.pyc
+            urls.cpython-36.pyc
+        views.py
+        apps.py
+        models.py
+        [static]
+            [order]
+                [img]
+                    addr.png
+                    tb_log.png
+                [css]
+                    order.css
+                [js]
+                    order.js
+        [templates]
+            [order]
+                order_list.html
+                order.html
+    [store]
+        urls.py
+        [__pycache__]
+            wsgi.cpython-36.pyc
+            settings.cpython-36.pyc
+            __init__.cpython-36.pyc
+            urls.cpython-36.pyc
+        views.py
+        wsgi.py
+        settings.py
+    [static]
+        [js]
+            jquery.min.js
+    [templates]
+        index.html
 .gitignore
-[server]
-    [saler]
-        server_saler.txt
-    README.md
-    [order]
-        order.md
-    [data]
-        con_database.md
-        con_database.py
 [sql]
     store.sql
