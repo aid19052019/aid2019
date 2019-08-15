@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    font-size: 12px;
+    text-decoration: none;
+}
+a:link{
+    color:#3366cc;
+}
+a:visited{
+    color:#3366cc;
+}
+a:hover{
+    color: red;
+}
+
+
+#stepbar{
+    font-size: 14px;
+    height: 78px;
+    width: 990px;
+    margin:0 auto;
+    border:solid 0px red;
+    position: relative;
+}
+
+#stepbar>.img{
+    float: left;
+    width: 144px;
+    padding: 18px 0px 12px 0px;
+}
+#stepbar>.img>img{
+    width: 100%;
+}
+#stepbar>.bar{
+    height: 23px;
+    float: right;
+    border:solid 0px royalblue;
+    padding: 33px 0px 12px 0px;
+    position: relative;
+    text-align: center;
+    line-height: 23px;
+}
+#stepbar>.bar>.bar_t{
+    float: left;
+    width: 158px;
+    height: 23px;
+    border:solid 0px red;
+    color:#424242;
+    /* background: #FFFFFF; */
+    background-color: #E3E3E3;
+}
+
+#stepbar>.bar>.bar_t:nth-child(1){
+    border-radius: 5px 0 0 5px;
+    background-color: #FF4503;
+    color:#FFFFFF;
+}
+#stepbar>.bar>.bar_t:nth-child(9){
+    border-radius: 0 5px 5px 0;
+}
+
+#stepbar>.bar>.flag{
+    float: left;
+    width: 15px;
+    height: 23px;
+    border:solid 0px blue;
+    color:#424242;
+    background: #FFFFFF;
+    position: absolute;
+}
+
+#stepbar>.bar>.flag:nth-child(2){
+    left:144px;
+}
+#stepbar>.bar>.flag:nth-child(4){
+    left:304px;
+}
+#stepbar>.bar>.flag:nth-child(6){
+    left:464px;
+}
+#stepbar>.bar>.flag:nth-child(8){
+    left:624px;
+}
+
+#stepbar>.bar>.flag>.sel_t{
+    height: 0;
+    width: 0;
+    border:solid 11.5px #FF4503;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+#stepbar>.bar>.flag>.sel_c{
+    height: 0;
+    width: 0;
+    border:solid 12px #E3E3E3;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: 3px;
+    top:0px;
+}
+
+#stepbar>.bar>.flag>.sel_b{
+    height: 0;
+    width: 0;
+    border:solid 12px #E3E3E3;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    left: 3px;
+    bottom:0px;
+}
+
+#stepbar>.bar>.flag>.dis_t{
+    height: 0;
+    width: 0;
+    border:solid 11.5px #E3E3E3;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+#stepbar>.bar>.flag>.dis_c{
+    height: 0;
+    width: 0;
+    border:solid 12px #E3E3E3;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: 3px;
+    top:0px;
+}
+
+#stepbar>.bar>.flag>.dis_b{
+    height: 0;
+    width: 0;
+    border:solid 12px #E3E3E3;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    left: 3px;
+    bottom:0px;
+}
+
+
+#address{
+    font-size: 14px;
+    width: 990px;
+    margin:0 auto;
+}
+
+#address>.add-top{
+    height: 20px;
+    border-bottom: solid 2px #f1f1f1;
+    margin-bottom: 20px;
+}
+#address>.add-top>p{
+    float: left;
+}
+
+#address>.add-top>a{
+    float: right;
+}
+
+#address>.add-list>.addr-sel{
+    background-color:#FFF0E8;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    border:solid 1px red;
+    margin: 2px 0;
+}
+#address>.add-list>.addr-sel>.addr-l{
+    float: left;
+}
+#address>.add-list>.addr-sel>.addr-l>img{
+    height: 20px;
+    padding: 5px;
+    float: left;
+}
+#address>.add-list>.addr-sel>.addr-l>p{
+    float: left;
+    margin: 0px 10px;
+}
+#address>.add-list>.addr-sel>.addr-c{
+    float: left;
+    position: absolute;
+    left: 100px;
+}
+#address>.add-list>.addr-sel>.addr-c>.ll{
+    color:#808080;
+    margin: 0 10px;
+}
+#address>.add-list>.addr-sel>.addr-r{
+    float: right;
+    padding: 0 10px 0 0;
+}
+
+
+#address>.add-list>.addr-dissel{
+    background-color:#FFFFFF;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0;
+}
+#address>.add-list>.addr-dissel>.addr-c{
+    float: left;
+    position: absolute;
+    left: 100px;
+}
+#address>.add-list>.addr-dissel>.addr-c>.ll{
+    color:#808080;
+    margin: 0 10px;
+}
+
+#address>.add-list>.addr-b{
+    background-color:#FFFFFF;
+    position: relative;
+    height: 40px;
+    line-height: 30px;
+    margin: 2px 0;
+}
+#address>.add-list>.addr-b>button{
+    position: absolute;
+    left:117px;
+    width: 100px;
+    height: 30px;
+    margin: 5px 0;
+}
