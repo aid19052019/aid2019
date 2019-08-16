@@ -100,48 +100,47 @@ create table buy_history(
 
 #用户信息表
 创建 表 users(
-	phone_number: TINYINT(44)   				#手机号    
-	email: VARCHAR(128)				        #邮箱
-	user_name: VARCHAR(32) NOT NULL			#用户名
-	user_password: VARCHAR(128) NOT NULL	#密码
-	user_id: INT AUTO_INCREMENT PRIMARY KEY	#用户id
-	head_portrait: TEXT DEFAULT			    #头像(默认为一张图片具体写法查看一下)
-	nickname: VARCHAR(32) DEFAULT			#昵称(默认与用户名相同)
-	sex: CHAR(16) DEFAULT				    #性别(要求设置默认值)
-	real_name: VARCHAR(32)				    #真实姓名
-	date_of_Birth: INT				        #出生日期
-	residential_address: VARCHAR(1024)		#居住地址
-	hometown: VARCHAR(128)				    #家乡
+	phone_number: TINYINT(44) #手机号    
+	email: VARCHAR(128) #邮箱
+	user_name: VARCHAR(32) NOT NULL #用户名
+	user_password: VARCHAR(128) NOT NULL #密码
+	user_id: INT AUTO_INCREMENT PRIMARY KEY #用户id
+	head_portrait: TEXT DEFAULT #头像(默认为一张图片具体写法查看一下)
+	nickname: VARCHAR(32) DEFAULT #昵称(默认与用户名相同)
+	sex: CHAR(16) DEFAULT #性别(要求设置默认值)
+	real_name: VARCHAR(32) #真实姓名
+	date_of_Birth: INT #出生日期
+	residential_address: VARCHAR(1024) #居住地址
+	hometown: VARCHAR(128) #家乡
 	)
 #历史信息:(对接订单表)
 创建 表 order_list(
-	individual_orders_id: INT AUTO_INCREMENT PRIMARY KEY	#个人历史信息id
-	user_id:						                        #用户id
-	store_id:						                        #店铺id
-	store_name:						                        #店铺名称
-	commodity_id:						                    #商品id
-	unit_purchased_cost:					                #购买单价
-	purchase_quantity:					                    #购买数量
-	total_money:						                    #总金额
+	individual_orders_id: INT AUTO_INCREMENT PRIMARY KEY #个人历史信息id
+	user_id #用户id
+	store_id #店铺id
+	commodity_id #商品id
+	unit_purchased_cost #购买单价
+	purchase_quantity #购买数量
+	total_money #总金额
 	)
 #收货地址: 
 创建 表 shipping_address(
-	shipping_address_id: INT AUTO_INCREMENT PRIMARY KEY	#收货地址id
-	user_id:						#用户id
-	consignee:VARCHAR(32)					#收货人姓名
-	area: VARCHAR(32)					#所在地区
-	province: VARCHAR(30)					#省
-	city							#市
-	county							#县/区
-	detailed address: txet					#详细地址
-	postcode: INT(24)					#邮政编码
-	phone_number: TINYINT(44)				#手机号码
+	shipping_address_id: INT AUTO_INCREMENT PRIMARY KEY #收货地址id
+	user_id: #用户id
+	consignee:VARCHAR(32) #收货人姓名
+	area: VARCHAR(32) #所在地区
+	province: VARCHAR(30) #省
+	city #市
+	county #县/区
+	detailed address: txet #详细地址
+	postcode: INT(24) #邮政编码
+	phone_number: TINYINT(44) #手机号码
 	)
 #收藏夹:(对接店铺信息表)
 创建 表 favorite_shop（
-	store_id:						#店铺id
-	store_name:						#店铺名称
+	store_id: #店铺id
+	store_name: #店铺名称
 	需要设置操作:添加/删除
-	note: TEXT						#备注
-	label classification:TEXT				#标签分类
+	note: TEXT #备注
+	label classification:TEXT #标签分类
 	)
