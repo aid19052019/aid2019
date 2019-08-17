@@ -1,0 +1,362 @@
+
+#top{
+    /* position: fixed; */
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    width: 1300PX;
+    /* 显示顶层 */
+    z-index: 10000;
+    /* width: 100%; */
+    background-color: rgb(236, 235, 235);
+    overflow: hidden;
+    font-size: 10px;
+}
+#top>span{
+    position: relative;
+    /* top: 12.5px; */
+    display: inline-block;
+    /* margin: 0 5px; */
+    padding: 0 10px;
+    color: #ccc;
+    /* float: left; */
+    border-right:solid 0.5px #ccc;
+    line-height: 100%;
+}
+#top>span:nth-child(1){
+    
+    left: 10px;
+    padding: 0px;
+    border: solid 2px #ccc;
+    border-radius: 2px 2px 1px 1px;
+}
+#a{
+    text-decoration: none;
+}
+.topfr{
+    top: 12.5px;
+    position: relative;
+    float: right;
+    line-height: 100%;
+}
+#mid{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+    
+}
+.mid-left{
+    border: solid 1px rgb(180, 180, 180);
+    /* border-right: solid 1px rgb(180, 180, 180); */
+    width: 173px;
+    float: left;
+}
+.mid-left>div{
+    /* border: solid 1px red; */
+    width: 100%;
+    /* height: 60px; */
+
+}
+.mid-left>div>table{
+    padding-bottom: 30px;
+    font-size: 10px;
+    color: rgb(170, 169, 169);
+    text-align: left;
+}
+th{
+    color: #000;
+    font-size:11px;
+    padding:5px;
+}
+table tr td{
+    width: 80px;
+    padding: 5px;
+    /* border: solid 0.1px greenyellow; */
+}
+
+.mid-right{
+    width:1000px ;
+    /* height: 500px; */
+    /* position: relative; */
+    float: right;
+    /* border: solid 1px red;    */
+}
+.mid-right-top1{
+    width: 100%;
+    height: 30px;
+    padding-top:10px;
+    padding-left: 20px;
+    border: dashed 1px  rgb(180, 180, 180);
+    font-size: 10px;    
+}
+.mid-right-top2{
+    width: 100%;
+    height: 380px;
+    /* position: relative; */
+    /* display: block; */
+    /* border: solid 1px greenyellow; */
+}
+.mid-right-top2>div{
+    height: 40px;
+    /* position: relative; */
+    width: 320px;;
+    margin: 5px 0 0 5px;
+    float: left;
+    font-size: 10px;
+}
+.mid-right-top2>div>input{
+    height: 25px;
+}
+.mid-right-top2>div:nth-child(1){
+    margin-left:20px; 
+    width: 800px;
+}
+
+.mid-right-top2>div:nth-child(3),.mid-right-top2>div:nth-child(11){
+    width: 600px;
+
+}
+.mid-right-top2>div:nth-child(12){
+    width: 800px;
+}
+.mid-right-top2>div:nth-child(13){
+    margin-left:80px; 
+    width: 800px;
+}
+.mid-right-top2>div>button{
+    margin: 5px;
+    height: 30px;
+}
+.mid-right-top2>div>button:nth-child(1){
+    background-color: orangered;
+    border: none;
+    color: #fff;
+}
+.mid-right-top2>div>select{
+    width: 160px;
+    height: 30px;
+    margin: 5px;
+}
+.mid-right-top2>div>select>option{
+    display: inline-block;
+    color: rgb(141, 141, 141);
+    height: 30px;
+    padding-top: 5px;
+}
+.mid-right>.data{
+    width: 100%;
+    height: 200px;
+    /* border: solid 1px greenyellow; */
+    /* float: left */
+}
+
+.mid-right>.data>ul{
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 5px;
+    height: 25px;
+    background-color: #e9eaee;
+    color: #494949;
+    border-top: solid 1px #ccc;
+    line-height: 25px;
+}
+.mid-right>.data>ul button{
+    /* display: inline-block; */
+    width: 10px;
+    height: 15px;
+    margin: 0 30px 0 5px;
+}
+.mid-right>.data>ul>li>#f1{
+    display: inline-block;
+    width: 350px;
+}
+.mid-right>.data>ul>li>.f{
+    display: inline-block;
+    margin-right: 60px;
+
+}
+
+
+.open-search{
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+#bot{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+}
+#bot>div>span{
+    border-right:solid 2px #ccc;
+    padding:0 10px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot>div>span>a{
+    text-decoration: none;
+}
+#bot>div>span>a:link{
+    color: #ccc;
+
+}
+#bot2{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+    color: #ccc;
+}
+#bot2>div>span{
+    /* border-right:solid 2px #ccc; */
+    padding:0 5px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot2>div>span>a{
+    text-decoration: none;
+}
+#bot2>div>span>a:link{
+    color: #ccc;
+
+}
+#suspension{
+    background-color: #fff;
+    width: 100px;
+    /* height: 400px; */
+    position: fixed;
+    right: 0;
+    top:180px;
+    z-index: 10000;
+
+}
+#suspension>div{
+    border:solid 1px #ccc;
+}
+#suspension>div>p{
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 10px;
+    color: #ccc;
+    list-style: none;
+}
+#suspension>div>p:nth-child(1){
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #000;
+    background-color: rgb(131, 131, 255);
+}
+#suspension>div>p>span{
+    color: #fff;
+    position:relative;
+    float: right;
+    cursor: pointer;
+}
+
+/* 开店注册页面样式        */
+        
+.register-tips{
+    padding: 0px 10px;
+    /* 隐藏 开店须知*/
+    /* display: none; */
+}
+.register-tips>div:nth-child(1){
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.register-tips>div:nth-child(2){
+    padding: 20px 20px;
+    border: solid 1px #ccc;
+}
+.register-tips>div:nth-child(2)>.question{
+    width: 100%;
+}
+.register-tips>div:nth-child(2)>.answer{
+    width: 100%;
+    margin: 0 10px 20px 10px;
+    font-size: 10px;
+    color: rgb(43, 42, 42);
+}
+.register-tips>div:nth-child(3){
+    text-align: center;
+}
+.register-tips>div:nth-child(3)>button{
+    margin:10px 10px 30px 10px;
+    height: 35px;
+    line-height: 100%;    
+}
+.register-tips>div:nth-child(3)>button:nth-child(2){
+    background-color: #1170bc;
+    color: #fff;
+    /* 隐藏开店注册信息 */
+    border: none;
+}
+
+.register{
+    padding: 10px 50px ;
+    /* 隐藏 开店须知*/
+    display: none;
+}
+.register>div{
+    width: 100%;
+    height: 30px;
+    margin: 20px 40px;
+    font-size: 13px;
+}
+.register>div:nth-child(20){
+    height: 160px;
+}
+
+.register>.title{
+    color: #eb811f;
+    height: 40px;
+    margin: 20px;
+    font-size: 20px;
+}
+.register>div>button{
+    width: 80px;
+    height: 40px;
+    margin: 0px 20px 60px 70px;
+    font-size: 20px;
+    background-color: #eb811f;
+    border: #eb811f;
+}
+
+/* 图像上传
+.file-box {
+    position: relative;
+    display: inline-block;
+}
+.file-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: inline-block;
+    border: none;
+}
+.file-box .txt,.file-box .file {
+    width: 70px;
+    height: 36px;
+    position: absolute;
+    top: -20px;
+    left: 100px;
+    text-align: center;
+} */
+

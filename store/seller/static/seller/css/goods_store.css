@@ -1,0 +1,370 @@
+/* 以下是宝贝管理页面样式 */
+/* 清空元素浏览器默认的属性值 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+}
+/* 清除超级链接下划线 */
+a{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+ul{
+    list-style-type: none;
+}
+/* 添加卖家通用样式*/
+/* 添加顶部通用样式 */
+#top-nav{
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 12px;
+    color: #8b8b8b;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+}
+#top-nav>.tnleft{
+    float: left;
+    width: 80px;
+    margin: 10px 0px 10px 0px;
+    border-right: 1px solid #ccc;
+}
+#top-nav>.tnmid{
+    float: left;
+    padding: 10px;
+
+}
+#top-nav>.tnright{
+    float: right;
+    width: 510px;
+    position: relative;
+    z-index: 10000 !important;
+}
+#top-nav>.tnright>ul{
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 10000 !important;
+}
+#top-nav>.tnright>ul>li{
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    color: #8b8b8b;
+}
+#top-nav>.tnright>ul>.mytaobao{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 10000 !important;
+}
+#top-nav>.tnright .menu{
+    position: relative;
+    padding-right: 10px;
+    z-index: 10000 !important;
+}
+#top-nav>.tnright .menu:hover{
+    position: relative;
+    background-color: white;
+    border: solid 1px #ebebeb;
+    border-bottom: none;
+    /* margin: 2px 0 0; */
+}
+#top-nav>.tnright .menu-hd{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: #8b8b8b;
+    padding: 0 10px;
+    z-index: 10002 !important;
+}
+#top-nav>.tnright>ul b{
+    position: absolute;
+    border:4px solid #666;
+    width: 0px;
+    top: 5px;
+    right: 0;;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+#top-nav>.tnright .menu-bd{
+    width: 94px;
+    /* display: none; */
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 10002 !important;
+    right: 0px;
+}
+#top-nav>.tnright>ul>li:nth-child(1)>div{
+    width: 80px;
+}
+#top-nav>.tnright>ul>li:nth-child(2)>div{
+    width: 85px;
+    border-left: 1px solid #ccc;
+}
+#top-nav>.tnright>ul>li:nth-child(3)>div{
+    width: 110px;
+    border-left: 1px solid #ccc;
+}
+#top-nav>.tnright>ul>li:nth-child(4)>div,li:nth-child(5)>div,li:nth-child(6)>div{
+    width: 68px;
+    border-left: 1px solid #ccc;
+}
+
+#top-work{
+    background-color: #497cf0;
+    height: 60px;
+    position: relative;
+    z-index: 0;
+}
+#top-work>.work{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: left;    
+    position: relative;
+    z-index: 0;
+}
+#top-work>.work>span>a{
+    line-height: 60px;
+    color: white;
+}
+#top-work>.work span:nth-child(1){
+    font-size: 25px;
+    margin-right: 10px;
+}
+#top-work>.work span:nth-child(2){
+    font-size: 14px;
+}
+
+
+#mid{
+    padding: 10px 30px 20px 0;
+    width: 1190px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    overflow: hidden;
+}
+#mid>.nav{
+    float: left;
+    width: 14%;
+    border: solid 1px #ccc;
+    margin: 0 20px 10px 0;
+}
+#mid>.nav>div{
+    margin: 20px 20px 65px 20px;
+}
+#mid>.nav>div>div{
+    margin: 10px 0;
+}
+#mid>.right{
+    float: left;
+    left: 20px;
+    width: 83%;
+}
+#mid>.right>#rtop{
+    overflow: hidden;
+    border: solid 1px #ccc;
+    padding: 10px 20px;
+}
+#mid>.right #titl{
+    display: inline-block;
+    font-weight: bold;
+    width: 100px;
+}
+#mid>.right #notice{
+    margin-left: 107px;
+    margin-top: 5px;
+}
+#mid>.right>#tool{
+    border: solid 1px #ccc;
+    padding: 15px 20px;
+    margin: 5px 0;
+}
+#mid>.right>#tool>span{
+    display: inline-block;
+    width: 19%;
+    color: #959595;
+}
+#mid>.right>#goods{
+    padding: 0;
+    margin-bottom: 20px;
+}
+#mid>.right>#goods>span{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #959595;
+    border-right: solid 1px #e2e2e2;
+}
+#mid>.right>#baseInfo{
+    padding: 0;
+    margin: 10px 20px;
+}
+#mid>.right>#baseInfo>input{
+    display: inline-block;
+    width: 10%;
+    height: 25px;
+    margin-right: 30px;
+}
+#mid>.right>#baseInfo>.ran{
+    width: 5%;
+    margin: 5px;
+}
+#mid>.right>#choose{
+    padding: 0;
+    margin: 10px 20px 20px;
+}
+#mid>.right>#choose>select{
+    display: inline-block;
+    width: 98px;
+    height: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+#mid>.right>#choose>.ran{
+    width: 5%;
+    margin: 5px;
+    height: 25px;
+}
+/* 调整店铺分类和商品id后面的框对齐 */
+#mid>.right>#choose>.topCls{
+    margin-right: 20px;
+}
+#mid>.right>#btn{
+    margin: 10px 20px;
+}
+#mid>.right>#btn>input{
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+    border: solid 1px #ccc;
+    background-color: white;
+    color: #494949;
+}
+#mid>.right>#batch{
+    margin: 20px 10px 10px 0;
+}
+#mid>.right>#batch>button,#mid>.right>#batch>#more{
+    width: 90px;
+    height: 30px;
+    margin-right: 8px;
+    color: #494949;
+    text-align: center;
+}
+#mid>.right>#data{
+    height: 200px;
+    border-bottom: solid 1px #ccc;
+}
+#mid>.right>#data>ul{
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 5px;
+    height: 25px;
+    background-color: #e9eaee;
+    color: #494949;
+    border-top: solid 1px #ccc;
+    line-height: 25px;
+}
+#mid>.right>#data>ul button{
+    /* display: inline-block; */
+    width: 10px;
+    height: 15px;
+    margin: 0 30px 0 5px;
+}
+#mid>.right>#data>ul>li>#f1{
+    display: inline-block;
+    width: 350px;
+}
+#mid>.right>#data>ul>li>.f{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+
+/* 添加底部通用样式 */
+#bot{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+}
+#bot>div>span{
+    border-right:solid 2px #ccc;
+    padding:0 10px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot>div>span>a{
+    text-decoration: none;
+}
+#bot>div>span>a:link{
+    color: #ccc;
+
+}
+#bot2{
+    width: 1200px;
+    /* height:1600px ; */
+    margin: 0 auto;
+    padding: 15px 0;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: hidden;
+    color: #ccc;
+}
+#bot2>div>span{
+    /* border-right:solid 2px #ccc; */
+    padding:0 5px;
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+#bot2>div>span>a{
+    text-decoration: none;
+}
+#bot2>div>span>a:link{
+    color: #ccc;
+
+}
+/* 添加右侧悬浮窗通用样式 */
+#suspension{
+    background-color: #fff;
+    width: 100px;
+    /* height: 400px; */
+    position: fixed;
+    right: 0;
+    top:180px;
+    z-index: 10000;
+
+}
+#suspension>div{
+    border:solid 1px #ccc;
+}
+#suspension>div>p{
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 10px;
+    color: #ccc;
+    list-style: none;
+}
+#suspension>div>p:nth-child(1){
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #000;
+    background-color: rgb(131, 131, 255);
+}
+#suspension>div>p>span{
+    color: #fff;
+    position:relative;
+    float: right;
+    cursor: pointer;
+}
