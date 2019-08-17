@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仓库中的宝贝</title>
+    <style>
+        body{
+            font-size: 12px;
+        }
+        #mid{
+            padding: 10px 30px 20px 0;
+            width: 1190px;
+            margin: 0 auto;
+            border: solid 1px #ccc;
+            overflow: hidden;
+        }
+        #mid>.nav{
+            float: left;
+            width: 14%;
+            border: solid 1px #ccc;
+            margin: 0 20px 10px 0;
+        }
+        #mid>.nav>div{
+            margin: 20px 20px 65px 20px;
+        }
+        #mid>.nav>div>div{
+            margin: 10px 0;
+        }
+        #mid>.right{
+            float: left;
+            left: 20px;
+            width: 83%;
+        }
+        #mid>.right>#rtop{
+            overflow: hidden;
+            border: solid 1px #ccc;
+            padding: 10px 20px;
+        }
+        #mid>.right #titl{
+            display: inline-block;
+            font-weight: bold;
+            width: 100px;
+        }
+        #mid>.right #notice{
+            margin-left: 107px;
+            margin-top: 5px;
+        }
+        #mid>.right>#tool{
+            border: solid 1px #ccc;
+            padding: 15px 20px;
+            margin: 5px 0;
+        }
+        #mid>.right>#tool>span{
+            display: inline-block;
+            width: 19%;
+            color: #959595;
+        }
+        #mid>.right>#goods{
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        #mid>.right>#goods>span{
+            display: inline-block;
+            padding: 10px 20px;
+            color: #959595;
+            border-right: solid 1px #e2e2e2;
+        }
+        #mid>.right>#baseInfo{
+            padding: 0;
+            margin: 10px 20px;
+        }
+        #mid>.right>#baseInfo>input{
+            display: inline-block;
+            width: 10%;
+            height: 25px;
+            margin-right: 30px;
+        }
+        #mid>.right>#baseInfo>.ran{
+            width: 5%;
+            margin: 5px;
+        }
+        #mid>.right>#choose{
+            padding: 0;
+            margin: 10px 20px 20px;
+        }
+        #mid>.right>#choose>select{
+            display: inline-block;
+            width: 98px;
+            height: 30px;
+            margin-right: 30px;
+            text-align: left;
+        }
+        #mid>.right>#choose>.ran{
+            width: 5%;
+            margin: 5px;
+            height: 25px;
+        }
+        /* 调整店铺分类和商品id后面的框对齐 */
+        #mid>.right>#choose>.topCls{
+            margin-right: 20px;
+        }
+        #mid>.right>#btn{
+            margin: 10px 20px;
+        }
+        #mid>.right>#btn>input{
+            width: 60px;
+            height: 30px;
+            margin: 10px;
+            border: solid 1px #ccc;
+            background-color: white;
+            color: #494949;
+        }
+        #mid>.right>#batch{
+            margin: 20px 10px 10px 0;
+        }
+        #mid>.right>#batch>button,#mid>.right>#batch>#more{
+            width: 90px;
+            height: 30px;
+            margin-right: 8px;
+            color: #494949;
+            text-align: center;
+        }
+        #mid>.right>#data{
+            height: 200px;
+            border-bottom: solid 1px #ccc;
+        }
+        #mid>.right>#data>ul{
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 5px;
+            height: 25px;
+            background-color: #e9eaee;
+            color: #494949;
+            border-top: solid 1px #ccc;
+            line-height: 25px;
+        }
+        #mid>.right>#data>ul button{
+            /* display: inline-block; */
+            width: 10px;
+            height: 15px;
+            margin: 0 30px 0 5px;
+        }
+        #mid>.right>#data>ul>li>#f1{
+            display: inline-block;
+            width: 350px;
+        }
+        #mid>.right>#data>ul>li>.f{
+            display: inline-block;
+            margin-right: 60px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 添加顶部元素 -->
+    <div id="top-nav">
+        <div class="tnleft"><a href="#">卖家手机端</a></div>
+        <div class="tnmid">
+            <a href="#">昵称</a>
+            <a href="#">退出</a>
+        </div>
+        <div class="tnright">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">淘宝网首页</a>
+                    </div>
+                    
+                </li>
+                <li class="mytaobao">
+                    <div class="menu">
+                      <a class="menu-hd" href="#">
+                        我的淘宝
+                        <b></b>
+                      </a>
+                      <s class="line-border"></s>
+                      <div class="menu-bd">
+                        <div class="menu-bd-panel">
+                          <div id="shw">
+                            <a href="#">已买到的宝贝</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+
+                <li class="seller-center">
+                    <div class="menu">
+                        <a class="menu-hd" href="#">千牛卖家中心<b></b></a>
+                        <div class="menu-bd">
+                            <div class="menu-bd-panel">
+                                <div>
+                                    <a href="#">已卖出的宝贝</a>
+                                    <a href="#">出售中的宝贝</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>    
+                
+                <li><div>卖家服务</div></li>
+                <li><div>联系客服</div></li>
+                <li><div>卖家地图</div></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-work">
+        <div class="work">
+            <span><a href="#">千牛</a></span>
+            <span><a href="#">卖家工作台</a></span>
+        </div>
+    </div>
+    <div id="mid">
+        <div class="nav">
+            <div>
+                <h3>店铺管理</h3>
+                <span>我要开店</span>
+            </div>
+            <div>
+                <h3>交易管理</h3>
+                <span>已卖出的宝贝</span>
+            </div>
+            <div>
+                <h3>宝贝管理</h3>
+                <div>发布宝贝</div>
+                <div>出售中的宝贝</div>
+                <div>仓库中的宝贝</div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="rtop">
+                <img src="" alt="">
+                <span id="titl">官方公告</span>
+                <span>1.如您在使用过程中遇到任何问题，可以反馈到旺旺群2662906756，我们会持续优化。</span>              
+                <div id="notice">2.若宝贝90天内无编辑、流量或出售的行为，系统将把宝贝作为滞销商品下架至<a href="">滞销商品下架</a></div>          
+            </div>
+            <div id="tool">
+                <span id="titl">官方工具</span>
+                <span>商品回收站</span>
+                <span>历史宝贝记录</span>
+                <span>被下架的违规宝贝</span>
+                <span>滞销下架宝贝</span>
+            </div>
+            <div id="goods">
+                <span>全部宝贝</span>
+                <span>出售中的宝贝</span>
+                <span>仓库中的宝贝</span>
+            </div>
+            <div id="baseInfo">
+                <span>商品标题</span>
+                <input type="text">
+                <span>商品ID</span>
+                <input type="text" placeholder="多个ID以逗号或空格分隔">
+                <span>商家编码</span>
+                <input type="text">
+                <span>价格</span>
+                <input type="text" class="ran">
+                <span>--</span>
+                <input type="text" class="ran">
+            </div>
+            <div id="choose">
+                <span>一级类目</span>
+                <select name="topCls" class="topCls">
+                    <option value=""></option>
+                </select>
+                <span>店铺分类</span>
+                <select name="storeCls">
+                    <option value=""></option>
+                </select>
+                <span>宝贝类型</span>
+                <select name="goodsCls">
+                    <option value=""></option>
+                </select>
+                <span>销量</span>
+                <input type="text" class="ran">
+                <span>--</span>
+                <input type="text" class="ran">
+            </div>
+            <div id="btn">
+                <input type="submit" value="查询">
+                <input type="reset"/>
+            </div>
+            <div id="batch">
+                <button>批量删除</button>
+                <button>批量上架</button>
+                <button>批量下架</button>
+                <select name="more" id="more">
+                    <option value="" aria-checked="true">更多</option>
+                </select>
+            </div>
+            <div id="data">
+                <ul>
+                    <li>
+                        <button></button>
+                        <span id="f1">商品名称</span>
+                        <span class="f">价格</span>
+                        <span class="f">库存</span>
+                        <span class="f">销量</span>
+                        <span class="f">创建时间</span>
+                        <span class="f">结束时间</span>
+                        <span class="f">操作</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部分割线1 -->
+    <div style="width: 1200px;margin: 0 auto;height: 0;border: solid 1px #ccc"></div>
+    <!-- 底部菜单 -->
+    <div id="bot">
+        <div>
+            <span><a href="#">阿里巴巴集团</a></span>
+            <span><a href="#">淘宝网</a></span>
+            <span><a href="#">天猫</a></span>
+            <span><a href="#">聚划算</a></span>
+            <span><a href="#">全球速卖通</a></span>
+            <span><a href="#">阿里巴巴国际交易市场</a></span>
+            <span><a href="#">1688</a></span>
+            <span><a href="#">阿里妈妈</a></span>
+            <span><a href="#">飞猪</a></span>
+            <span><a href="#">阿里云计算</a></span>
+            <span><a href="#">YunOS</a></span>
+            <span><a href="#">阿里通信</a></span>
+            <span><a href="#">一淘</a></span>
+            <span><a href="#">万网</a></span>
+            <span><a href="#">高德</a></span>
+            <span><a href="#">UC</a></span>
+            <span><a href="#">友盟</a></span>
+            <span><a href="#">虾米</a></span>
+            <span><a href="#">阿里星球</a></span>
+            <span><a href="#">来往</a></span>
+            <span><a href="#">钉钉</a></span>
+            <span><a href="#">支付宝</a></span>
+            <span><a href="#">优酷</a></span>
+            <span><a href="#">土豆</a></span>
+            <span><a href="#">阿里健康</a></span>
+            <span><a href="#">阿里影业</a></span>
+            <span><a href="#">阿里体育</a></span>
+            <span><a href="#">网商银行</a></span>
+        </div>
+    </div>
+    <!-- 底部分割线2 -->
+    <div style="width: 1200px;margin: 0 auto;height: 0;border: solid 1px #ccc"></div>
+    <!-- 底部菜单2 -->
+    <div id="bot2">
+        <div>
+            <span><a href="#">关于淘宝</a></span>
+            <span><a href="#">合作伙伴</a></span>
+            <span><a href="#">营销中心</a></span>
+            <span><a href="#">廉正举报</a></span>
+            <span><a href="#">联系客服</a></span>
+            <span><a href="#">开放平台</a></span>
+            <span><a href="#">诚征英才</a></span>
+            <span><a href="#">联系我们</a></span>
+            <span><a href="#">网站地图</a></span>
+            <span><a href="#">法律声明及隐私权政策</a></span>
+            <span style="border-right:solid 2px #ccc;"><a href="#">知识产权</a></span>
+            <span style="margin-left: 25px">© 2003-2017 Taobao.com 版权所有</span>
+        </div>
+        <div>
+            <span style="border-right:solid 2px #ccc;color:#000;">班级：tarena-AID1905</span>
+            <span style="border-right:solid 2px #ccc;color:#000;">商家已卖出物品管理页面</span>
+            <span style="border-right:solid 2px #ccc;color:#000;">信息网络传播视听节目许可证：027-****66</span>
+            <span style="border-right:solid 2px #ccc;color:#000;">互联网违法和不良信息举报电话:135****6666</span>
+        </div>
+    </div>
+    <!-- 右侧悬浮窗 -->
+    <div id="suspension">
+        <div>
+            <p>猜你想问: <span id="idoit">✖</span> </p>
+            <p><a href="#"> 买家一直申请不退货仅退款，怎么办？</a></p>
+            <p><a href="#"> 卖家如何编辑/删除发货、取货、退货地址？</a></p>
+            <p><a href="#"> 运费热点问题</a></p>
+            <p><a href="#"> 发货的时候填错了物流公司/单号，怎么办？</a></p>
+        </div>
+    </div>
+    <script>
+        // 行导航栏下拉列表
+        function $$(fun1,fun2) {
+            fun1.on("mouseover", function() {
+                fun2.show();
+            }).on("mouseout", function() {
+                fun2.hide();
+            })
+        }
+        
+        // "我的淘宝"
+        $$($(".mytaobao").first(),$(".menu-bd").first())
+        // "千牛卖家中心"
+        $$($(".seller-center").last(),$(".menu-bd").last())
+
+    </script>
+</body>
+</html>
