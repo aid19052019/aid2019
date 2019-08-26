@@ -35,3 +35,6 @@ def settlement(request):
             order_list.amount = shopping_car_info.amount
             order_list.all_money = order_list.amount * order_list.price
             order_list.save()
+
+def shopping_car(request):
+    return render(request, "order/shopping_car.html")

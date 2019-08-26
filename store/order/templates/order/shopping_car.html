@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="/static/order/css/shopping_car.css">
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <form action="">
+    <div id="stepbar">
+        <div class="img">
+            <img src="/static/order/img/tb_gwc.png">
+        </div>
+        <div class="select">
+                <div class="tp">
+                    <select name="" id="">
+                        <option value="1">宝贝</option>
+                        <option value="2">店铺</option>
+                    </select>
+                </div>
+                <div class="val">
+                    <input type="text">
+                </div>
+                <div class="sel">
+                    <input type="submit" value="搜索">
+                </div>
+            
+        </div>
+    </div>
+    </form>
+    <form action="">
+    <div id = "goods">
+        <div class="head">
+            <div>
+                <input type="checkbox" name="" id="">
+                <span>全选</span> 
+            </div>
+            <div>商品信息</div>
+            <div>单价</div>
+            <div>数量</div>
+            <div>金额</div>
+            <div>操作</div>
+        </div>
+        <div class="body">
+            <!-- 下面是需要显示的店铺明细,需要重复取值 -->
+            <div class="googs_list">
+                <div class="googs_list_head">
+                    <span>店铺:</span>
+                    <span>花花公子折扣店</span>
+                </div>
+                <div class="googs_list_body">
+                    <!-- 下面是同一个商家需要显示的商品明细,需要重复取值 -->
+                    <div class="googs_list_body_list">
+                        <div>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/static/order/img/1_jpg_80x80.jpg" alt="">
+                        </div>
+                        <div><span>花花公子桑蚕丝Polo衫男夏季薄款冰丝男士短袖T恤中年翻领衣服男</span></div>
+                        <div>
+                            <span>颜色：宝蓝</span></br>
+                            <span>尺码：185/3XL</span> 
+                        </div>
+                        <div>
+                            <span>￥168.00</span>
+                        </div>
+                        <div>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div>
+                            <span>￥336.00</span>
+                        </div>
+                        <div>
+                            <a href="">移入收藏夹</a> </br>
+                            <a href="">删除</a>
+                        </div>
+                    </div>
+
+                    <div class="googs_list_body_list">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <img src="/static/order/img/1_jpg_80x80.jpg" alt="">
+                            </div>
+                            <div><span>花花公子桑蚕丝Polo衫男夏季薄款冰丝男士短袖T恤中年翻领衣服男</span></div>
+                            <div>
+                                <span>颜色：宝蓝</span></br>
+                                <span>尺码：185/3XL</span> 
+                            </div>
+                            <div>
+                                <span>￥168.00</span>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                <span>￥336.00</span>
+                            </div>
+                            <div>
+                                <a href="">移入收藏夹</a> </br>
+                                <a href="">删除</a>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+
+            <div class="googs_list">
+                    <div class="googs_list_head">
+                        <span>店铺:</span>
+                        <span>花花公子折扣店</span>
+                    </div>
+                    <div class="googs_list_body">
+                        <!-- 下面是同一个商家需要显示的商品明细,需要重复取值 -->
+                        <div class="googs_list_body_list">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <img src="/static/order/img/1_jpg_80x80.jpg" alt="">
+                            </div>
+                            <div><span>花花公子桑蚕丝Polo衫男夏季薄款冰丝男士短袖T恤中年翻领衣服男</span></div>
+                            <div>
+                                <span>颜色：宝蓝</span></br>
+                                <span>尺码：185/3XL</span> 
+                            </div>
+                            <div>
+                                <span>￥168.00</span>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                <span>￥336.00</span>
+                            </div>
+                            <div>
+                                <a href="">移入收藏夹</a> </br>
+                                <a href="">删除</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+            </div>
+
+
+        </div>
+        <div class="bottom">
+            <div class="bl">
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <span>全选</span> 
+                </div>
+                <div>已选商品</div>
+                <div>0</div>
+                <div>件</div>
+                <div>合计(不含运费):</div>
+                <div>0.00</div>
+            </div>
+            <div class="br">
+                <input type="button" value="结 算" onmousemove="">
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <script src="/static/order/js/order.js"></script>
+</body>
+</html>

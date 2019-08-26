@@ -243,3 +243,59 @@ a:hover{
     height: 30px;
     margin: 5px 0;
 }
+
+
+/* order */
+#order{
+    font-size: 14px;
+    width: 990px;
+    margin:0 auto;
+}
+#order div{
+    border: solid 1px red;
+}
+#order>.title>.title_head{
+    height: 23px;
+    vertical-align:middle;
+}
+#order>.title>.title_head>div{
+    float: left;
+    border-bottom:solid 2px #AFCFFE;
+    text-align: center;
+}
+
+#order>.title>.title_head>div:nth-child(1){
+    width: 326px;
+}
+#order>.title>.title_head>div:nth-child(2){
+    width: 200px;
+}
+#order>.title>.title_head>div:nth-child(3){
+    width: 150px;
+}
+#order>.title>.title_head>div:nth-child(4){
+    width: 150px;
+}
+#order>.title>.title_head>div:nth-child(5){
+    width: 150px;
+}
+
+#order>.order_all>.order_one>.order_head{
+    height: 40px;
+}
+
+#order>.order_all>.order_one>.order_head>div{
+    margin-top: 18px;
+    float: left;
+}
+
+#order>.order_all>.order_one>.order_head>div:nth-child(1){
+    width: 150px;
+}
+#order>.order_all>.order_one>.order_head>div:nth-child(1){
+    width: 150px;
+}
+
+#order>.order_all>.order_one>.order_list>.order_list_goods{
+    height: 100px;
+}
