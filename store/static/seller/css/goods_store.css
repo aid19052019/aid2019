@@ -173,7 +173,7 @@ ul{
     border: solid 1px #ccc;
     padding: 10px 20px;
 }
-#mid>.right #titl{
+#mid>.right .titl{
     display: inline-block;
     font-weight: bold;
     width: 100px;

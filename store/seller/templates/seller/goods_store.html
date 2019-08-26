@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>仓库中的宝贝</title>
-    {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'seller/css/goods_store.css' %}">    
-    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <link rel="stylesheet" href="/static/seller/css/goods_store.css">
+    <script src="/static/js/jquery.min.js"></script>
 </head>
 <body>
     <!-- 添加顶部元素 -->
@@ -23,22 +22,22 @@
                     <div>
                         <a href="#">淘宝网首页</a>
                     </div>
-                    
+
                 </li>
                 <li class="mytaobao">
                     <div class="menu">
-                      <a class="menu-hd" href="#">
+                    <a class="menu-hd" href="#">
                         我的淘宝
                         <b></b>
-                      </a>
-                      <s class="line-border"></s>
-                      <div class="menu-bd">
+                    </a>
+                    <s class="line-border"></s>
+                    <div class="menu-bd">
                         <div class="menu-bd-panel">
-                          <div id="shw">
+                        <div id="shw">
                             <a href="#">已买到的宝贝</a>
-                          </div>
                         </div>
-                      </div>
+                        </div>
+                    </div>
                     </div>
                 </li>
 
@@ -54,8 +53,8 @@
                             </div>
                         </div>
                     </div>
-                </li>    
-                
+                </li>
+
                 <li><div>卖家服务</div></li>
                 <li><div>联系客服</div></li>
                 <li><div>卖家地图</div></li>
@@ -88,12 +87,12 @@
         <div class="right">
             <div id="rtop">
                 <img src="" alt="">
-                <span id="titl">官方公告</span>
-                <span>1.如您在使用过程中遇到任何问题，可以反馈到旺旺群2662906756，我们会持续优化。</span>              
-                <div id="notice">2.若宝贝90天内无编辑、流量或出售的行为，系统将把宝贝作为滞销商品下架至<a href="">滞销商品下架</a></div>          
+                <span class="titl">官方公告</span>
+                <span>1.如您在使用过程中遇到任何问题，可以反馈到旺旺群2662906756，我们会持续优化。</span>
+                <div id="notice">2.若宝贝90天内无编辑、流量或出售的行为，系统将把宝贝作为滞销商品下架至<a href="">滞销商品下架</a></div>
             </div>
             <div id="tool">
-                <span id="titl">官方工具</span>
+                <span class="titl">官方工具</span>
                 <span>商品回收站</span>
                 <span>历史宝贝记录</span>
                 <span>被下架的违规宝贝</span>
