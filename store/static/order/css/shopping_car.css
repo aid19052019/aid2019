@@ -191,7 +191,7 @@ input,span{
     width: 756px; 
 }
 #goods>.bottom>.bl>div:nth-child(2) { 
-    width: 50px; 
+    width: 55px; 
     color: #4D4D52;
 }
 #goods>.bottom>.bl>div:nth-child(3) { 
@@ -210,7 +210,7 @@ input,span{
 }
 
 #goods>.bottom>.bl>div:nth-child(6) { 
-    width: 80px;
+    width: 67px;
     margin-left: 3px; 
     color: red;
     font-size: 18px;
